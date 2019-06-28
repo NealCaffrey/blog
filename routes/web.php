@@ -13,3 +13,6 @@
 
 Route::get('/', 'IndexController@home')->name('home');
 Route::get('/about', 'IndexController@about')->name('about');
+
+Route::resource('category', 'CategoriesController', ['only' => 'show']);
+Route::resource('article', 'ArticlesController', ['only' => 'show']);
