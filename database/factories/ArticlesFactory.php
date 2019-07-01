@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Article::class, function (Faker $faker) {
     $date_time = $faker->date . ' ' . $faker->time;
-    $text = $faker->text();
+    $text = $faker->text(1000);
     return [
         'title' => substr($text, 0, 20),
         'introduction' => substr($text, 0, 40),

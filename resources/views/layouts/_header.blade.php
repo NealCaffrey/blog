@@ -1,19 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container ">
-        <a class="navbar-brand" href="/">Blog</a>
+        <a class="navbar-brand" href="/"><\/\/\></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 1) }}">PHP</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 2) }}">MySQL</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 3) }}">Linux</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'PHP') }}">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'MySQL') }}">MySQL</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Linux') }}">Linux</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Web') }}">Web</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Algorithm') }}">Algorithm</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Review') }}">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Other') }}">Other</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
             </ul>
         </div>
 
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item" >
-                <input type="text" name="search" placeholder="搜索" id="search">
+                <input type="text" name="search" placeholder="Search" id="search">
             </li>
         </ul>
     </div>

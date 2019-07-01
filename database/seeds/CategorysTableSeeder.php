@@ -15,7 +15,12 @@ class CategorysTableSeeder extends Seeder
         $data = [
             ['title' => 'PHP'],
             ['title' => 'MySQL'],
-            ['title' => 'Linux']
+            ['title' => 'Linux'],
+            ['title' => 'Web'],
+            ['title' => 'Algorithm'],
+            ['title' => 'Review'],
+            ['title' => 'Other'],
+            ['title' => 'AboutMe']
         ];
 
         DB::table('categories')->insert($data);

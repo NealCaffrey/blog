@@ -14,5 +14,7 @@
 Route::get('/', 'IndexController@home')->name('home');
 Route::get('/about', 'IndexController@about')->name('about');
 
-Route::resource('category', 'CategoriesController', ['only' => 'show']);
-Route::resource('article', 'ArticlesController', ['only' => 'show']);
+Route::get('/category/{category}', 'CategoriesController@show')->name('category.show');
+Route::get('/article/{article}', 'ArticlesController@show')->name('article.show');
+
+Route::get('/search/{keyword}', 'IndexController@search')->name('search');

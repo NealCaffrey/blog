@@ -7,11 +7,18 @@
 <body>
 @include('layouts._header')
 
-<div class="container">
-    <div class="offset-md-1 col-md-10">
-        @yield('content')
-        @include('layouts._footer')
+<div class="container" id="content">
+    <div class="row">
+        <div class="col-md-9">
+            @yield('content')
+        </div>
+        <div class="col-md-3">
+            @include('layouts._sidebar')
+        </div>
     </div>
 </div>
+
+@include('layouts._footer')
+
 </body>
 </html>

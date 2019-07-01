@@ -8,8 +8,14 @@ use App\Models\Category;
 
 class CategoriesController extends Controller
 {
-    public function show(Category $category)
+    public function show($name)
     {
+        // 获取分类信息
+        $category = Category::where('title', $name)->first();
+        if (empty($category)) {
+            return view('errors.404');
+        }
+
         // 读取文章分类
         $articles = Article::where('type', $category->id)->orderBy('created_at', 'desc')->paginate(10);
 

@@ -1,12 +1,11 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="row">
-        <div class="offset-md-2 col-md-8">
-            <h3>{{ $article->title }}</h3>
-            <div>
-                {{ $article->content }}
-            </div>
+    <div id="show">
+        <h3 class="text-center">{{ $article->title }}</h3>
+        <h6 class="text-center">{{ $article->created_at }}</h6>
+        <div>
+            {{ $article->content }}
         </div>
     </div>
 @stop
