@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container ">
+    <div class="container">
         <a class="navbar-brand" href="/"><\/\/\></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -18,7 +18,7 @@
 
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item" >
-                <input type="text" name="search" placeholder="Search" id="search">
+                <input type="text" name="search" placeholder="Search" id="search" @keyup.enter="search($event)">
             </li>
         </ul>
     </div>

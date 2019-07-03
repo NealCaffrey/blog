@@ -27,6 +27,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
+new Vue({
+    el: '#search',
+    methods: {
+        search(e) {
+            window.location.href = '/search/' + e.currentTarget.value;
+        }
+    }
 });

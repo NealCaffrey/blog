@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@yield('title', 'Blog') - Laravel</title>
+    <title>@yield('title', 'Blog') - NealCaffrey</title>
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
@@ -20,5 +21,6 @@
 
 @include('layouts._footer')
 
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

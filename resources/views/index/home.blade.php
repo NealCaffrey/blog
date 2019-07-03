@@ -1,4 +1,5 @@
 @extends('layouts.default')
+@section('title', 'NealCaffrey')
 
 @section('content')
     <section class="status">

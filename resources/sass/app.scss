@@ -6,10 +6,20 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   background: #f0f2f5;
   height: 100%;
+  a{
+    color: #000000;
+  }
+  a:hover{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:link {
+    color: #000000;
+  }
 }
 
 /* header */
@@ -41,16 +51,6 @@ nav.navbar.navbar-expand-lg {
   border-radius:5px;
   background-color: white;
   padding:20px 30px;
-  a{
-    color: #000000;
-  }
-  a:hover{
-    text-decoration: none;
-    color: #000000;
-  }
-  a:link {
-    color: #000000;
-  }
 }
 .sidebar {
   border: 1px solid #d3e0e9;
@@ -61,6 +61,15 @@ nav.navbar.navbar-expand-lg {
     height: 40px;
     line-height: 40px;
   }
+
+  ul {
+    li {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin:10px 0;
+    }
+  }
 }
 
 #show{
@@ -69,6 +78,23 @@ nav.navbar.navbar-expand-lg {
   background-color: white;
   margin-top:20px;
   padding:20px 30px;
+
+  #article-show {
+    font-size: 16px;
+    line-height: 2.5;
+    margin-top:20px;
+  }
+
+  #article-footer {
+    margin-top:30px;
+    span {
+      background-color: #d0d0d0;
+      font-size: 16px;
+      margin: 0 7px;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
 }
 
 /* footer */

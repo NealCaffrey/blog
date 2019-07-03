@@ -15,28 +15,19 @@ class IndexController extends Controller
     public function home(Article $article)
     {
         $articles = $article->orderBy('created_at', 'desc')->paginate(10);
+        $active = $article->getActiveArticles();
 
-        return view('index/home', compact('articles'));
+        return view('index/home', compact('articles', 'active'));
     }
 
     /**
      * 关于页
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function about()
+    public function about(Article $article)
     {
-        return view('index/about');
-    }
+        $active = $article->getActiveArticles();
 
-    /**
-     * 查询页
-     * @param $keyword
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function search($keyword)
-    {
-        $articles = Article::where('title', 'like', "%$keyword%")->paginate(10);
-
-        return view('index/search', compact('articles', 'keyword'));
+        return view('index/about', compact('active'));
     }
 }

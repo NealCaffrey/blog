@@ -8,7 +8,7 @@ use App\Models\Category;
 
 class CategoriesController extends Controller
 {
-    public function show($name)
+    public function show($name, Article $article)
     {
         // 获取分类信息
         $category = Category::where('title', $name)->first();
@@ -17,8 +17,9 @@ class CategoriesController extends Controller
         }
 
         // 读取文章分类
-        $articles = Article::where('type', $category->id)->orderBy('created_at', 'desc')->paginate(10);
+        $articles = $article->where('type', $category->id)->orderBy('created_at', 'desc')->paginate(10);
+        $active = $article->getActiveArticles();
 
-        return view('articles.index', compact('articles'));
+        return view('categories.show', compact('articles', 'active'));
     }
 }
