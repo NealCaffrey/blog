@@ -26,7 +26,7 @@ class ArticlesController extends Controller
      */
     public function search($keyword, Article $article)
     {
-        $articles = $article->where('title', 'like', "%$keyword%")->paginate(10);
+        $articles = $article->with('category')->where('title', 'like', "%$keyword%")->paginate(10);
         $active = $article->getActiveArticles();
 
         return view('articles/search', compact('articles', 'keyword', 'active'));

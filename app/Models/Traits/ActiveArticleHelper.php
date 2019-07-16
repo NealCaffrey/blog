@@ -33,7 +33,7 @@ trait ActiveArticleHelper
      */
     public function calculateActiveArticles()
     {
-        $articles = Article::orderBy('num', 'desc')->limit(5)->get();
+        $articles = Article::orderBy('visits', 'desc')->limit(5)->get();
 
         return $articles;
     }

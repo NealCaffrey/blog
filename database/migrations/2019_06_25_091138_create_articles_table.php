@@ -17,9 +17,11 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('type');
             $table->string('title');
+            $table->string('tag');
             $table->text('introduction');
             $table->text('content');
-            $table->integer('num');
+            $table->integer('visits');
+            $table->integer('star');
             $table->timestamps();
             $table->index(['created_at']);
         });

@@ -18,3 +18,4 @@ Route::get('/category/{category}', 'CategoriesController@show')->name('category.
 
 Route::get('/article/{article}', 'ArticlesController@show')->name('article.show');
 Route::get('/search/{keyword}', 'ArticlesController@search')->name('article.search');
+Route::get('/tag/{tag}', 'ArticlesController@tag')->name('article.tag');

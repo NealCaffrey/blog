@@ -13,10 +13,13 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         $type = [1, 2, 3, 4, 5, 6, 7, 8];
+        $tags = ['php', 'apache', 'linux', 'mysql'];
         $faker = app(Faker\Generator::class);
 
-        $articles = factory(Article::class)->times(100)->make()->each(function ($article) use ($faker, $type) {
+        $articles = factory(Article::class)->times(100)->make()->each(function ($article) use ($faker, $type, $tags) {
             $article->type = $faker->randomElement($type);
+            $key = array_rand($tags, 1);
+            $article->tag = $tags[$key];
         });
 
         Article::insert($articles->toArray());

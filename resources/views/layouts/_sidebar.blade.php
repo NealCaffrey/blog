@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="col-md-12">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled font-weight-light">
             @foreach( $active as $k => $act)
                 <li>
                     <a href="{{ url('article', [$act->id]) }}">{{ $k+1 }}. {{ $act->title }}</a>

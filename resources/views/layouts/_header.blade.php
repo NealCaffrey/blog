@@ -17,7 +17,7 @@
         </div>
 
         <ul class="navbar-nav justify-content-end">
-            <li class="nav-item" >
+            <li class="nav-item">
                 <input type="text" name="search" placeholder="Search" id="search" @keyup.enter="search($event)">
             </li>
         </ul>
