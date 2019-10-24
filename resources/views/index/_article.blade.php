@@ -5,8 +5,16 @@
             <span class="article-title">{{ $article->introduction }}</span>
             <div class="mt-3">
                 <span>
-                    <i class="fa fa-align-justify text-success"></i>
+                    <i class="fa fa-align-left text-muted"></i>
                     <a href="{{ route('category.show', $article->category->title) }}">{{ $article->category->title }}</a>
+                </span>
+                <span>
+                  <i class="fa fa-eye text-muted pl-3"></i>
+                  <span>{{ $article->visits }}</span>
+                </span>
+                <span>
+                  <i class="fa fa-comment text-muted pl-3"></i>
+                  <span>{{ $article->comments }}</span>
                 </span>
 
                 <span class="float-right">{{ $article->created_at }}</span>

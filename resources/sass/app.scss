@@ -39,7 +39,8 @@ a.nav-link {
 }
 nav.navbar.navbar-expand-lg {
   margin-bottom: 40px;
-  border-bottom:1px solid #d3e0e9;
+  border-bottom:1px solid #e7e7e7;
+  box-shadow: 0 1px 11px 2px rgba(42,42,42,.1)
 }
 #search {
   -webkit-border-radius:18px;//适配以webkit为核心的浏览器(chrome、safari等)
@@ -47,7 +48,7 @@ nav.navbar.navbar-expand-lg {
   -ms-border-radius:18px;//适配IE浏览器
   -o-border-radius:18px;//适配opera浏览器
   border-radius:18px;//适配所有浏览器(需要放在最后面，类似于if..else if..else..)
-  border:1px solid gray;
+  border:1px solid rgba(34,36,38,.15);
   outline: none;
   width: 200px;
   height:35px;
@@ -61,7 +62,7 @@ nav.navbar.navbar-expand-lg {
 
 /* body */
 .article {
-  border: 1px solid #d3e0e9;
+  border: 1px solid #e7e7e7;
   border-radius:5px;
   background-color: white;
   padding:20px 30px;
@@ -70,11 +71,11 @@ nav.navbar.navbar-expand-lg {
   line-height: 1.8;
 }
 .sidebar {
-  border: 1px solid #d3e0e9;
+  border: 1px solid #e7e7e7;
   border-radius: 5px;
   background-color: white;
   .header {
-    border-bottom: 1px solid #d3e0e9;
+    border-bottom: 1px solid #e7e7e7;
     height: 40px;
     line-height: 40px;
   }
@@ -90,7 +91,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 #show{
-  border: 1px solid #d3e0e9;
+  border: 1px solid #e7e7e7;
   border-radius: 5px;
   background-color: white;
   margin-top:20px;

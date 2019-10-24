@@ -31,7 +31,9 @@ new Vue({
     el: '#search',
     methods: {
         search(e) {
+          if (e.currentTarget.value != ''){
             window.location.href = '/search/' + e.currentTarget.value;
+          }
         }
     }
 });

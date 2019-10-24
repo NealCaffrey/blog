@@ -14,6 +14,7 @@ $factory->define(Article::class, function (Faker $faker) {
         'content' => $text,
         'visits' => random_int(10, 200),
         'star' => random_int(10, 200),
+        'comments' => random_int(10, 200),
         'created_at' => $date_time,
         'updated_at' => $date_time
     ];
