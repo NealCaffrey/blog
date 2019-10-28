@@ -17056,6 +17056,10 @@ nav.navbar.navbar-expand-lg {
 }
 
 .article-title {
+  font-size: 22px;
+}
+
+.article-introduction {
   line-height: 1.8;
 }
 
@@ -17094,14 +17098,9 @@ nav.navbar.navbar-expand-lg {
 
 #show #article-footer {
   margin-top: 30px;
-}
-
-#show #article-footer span {
-  background-color: #d0d0d0;
-  font-size: 16px;
-  margin: 0 7px;
-  padding: 5px 10px;
-  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+  color: #a5a5a5;
 }
 
 .tag {

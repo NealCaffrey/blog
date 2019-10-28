@@ -7,13 +7,6 @@
         <h6 class="text-center mt-3">
             <i class="fa fa-align-left text-muted"></i>
             <a href="{{ route('category.show', $article->category->title) }}">{{ $article->category->title }}</a>
-
-            <i class="fa fa-eye text-muted pl-2"></i>
-            <span>{{ $article->visits }}</span>
-
-            <i class="fa fa-comment text-muted pl-2"></i>
-            <span>{{ $article->comments }}</span>
-
             <span class="ml-3">{{ $article->created_at }}</span>
         </h6>
         <div id="article-show">

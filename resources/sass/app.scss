@@ -68,6 +68,9 @@ nav.navbar.navbar-expand-lg {
   padding:20px 30px;
 }
 .article-title{
+  font-size:22px;
+}
+.article-introduction{
   line-height: 1.8;
 }
 .sidebar {
@@ -105,13 +108,9 @@ nav.navbar.navbar-expand-lg {
 
   #article-footer {
     margin-top:30px;
-    span {
-      background-color: #d0d0d0;
-      font-size: 16px;
-      margin: 0 7px;
-      padding: 5px 10px;
-      border-radius: 10px;
-    }
+    text-align:center;
+    font-size:28px;
+    color:rgb(165,165,165)
   }
 }
 
@@ -124,6 +123,7 @@ nav.navbar.navbar-expand-lg {
   text-decoration: none;
   color: rgba(0,0,0,0.54);
 }
+
 
 /* footer */
 footer {
@@ -140,3 +140,4 @@ footer {
   z-index: 100;
   margin-top: -100px;
 }
+
