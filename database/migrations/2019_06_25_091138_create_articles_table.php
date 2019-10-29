@@ -21,7 +21,6 @@ class CreateArticlesTable extends Migration
             $table->text('content');
             $table->integer('visits');
             $table->integer('star');
-            $table->integer('comments');
             $table->timestamps();
             $table->index(['created_at']);
         });

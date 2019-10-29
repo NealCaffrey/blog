@@ -4,11 +4,9 @@
     <list default="true" id="8c8dec4b-e36a-43a0-a0a9-a0a602f92431" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index/_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index/_article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ArticlesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ArticlesFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_25_091138_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_25_091138_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,12 +136,13 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\14343\code\Blog\resources\views\index" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\Blog\app\Models" />
       <recent name="C:\Users\14343\code\Blog\resources\views\categories" />
       <recent name="C:\Users\14343\code\Blog\resources\views\articles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\14343\code\Blog\resources\views\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -180,6 +179,7 @@
       <workItem from="1563169298538" duration="15326000" />
       <workItem from="1571899369980" duration="8425000" />
       <workItem from="1572249989045" duration="4652000" />
+      <workItem from="1572319561932" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1561977133095</created>
@@ -193,6 +193,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
