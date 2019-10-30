@@ -20,5 +20,3 @@ Route::get('/article/{article}', 'ArticlesController@show')->name('article.show'
 Route::get('/search/{keyword}', 'ArticlesController@search')->name('article.search');
 Route::get('/tag/{tag}', 'ArticlesController@tag')->name('article.tag');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
