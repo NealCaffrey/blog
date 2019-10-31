@@ -11,5 +11,11 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');
-    $router->get('/article', 'ArticleController@index');
+    $router->resource('articles', ArticleController::class);
+    $router->resource('categories', CategoryController::class);
+
+    $router->get('/api/category', function (){
+        $category = \App\Models\Category::all(['id', 'title as text']);
+        return $category;
+    });
 });

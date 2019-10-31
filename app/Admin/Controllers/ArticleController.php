@@ -1,56 +1,89 @@
 <?php
 
-
 namespace App\Admin\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\Article;
-use Encore\Admin\Controllers\Dashboard;
+use App\Models\Category;
+use Encore\Admin\Controllers\AdminController;
+use Encore\Admin\Form;
 use Encore\Admin\Grid;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Layout\Column;
-use Encore\Admin\Layout\Content;
-use Encore\Admin\Layout\Row;
+use Encore\Admin\Show;
 
-class ArticleController extends Controller
+class ArticleController extends AdminController
 {
-    public function index2()
+    /**
+     * Title for current resource.
+     *
+     * @var string
+     */
+    protected $title = 'App\Models\Article';
+
+    /**
+     * Make a grid builder.
+     *
+     * @return Grid
+     */
+    protected function grid()
     {
         $grid = new Grid(new Article);
 
-        $grid->column('id', 'ID')->sortable();
-        $grid->column('name');
-        $grid->column('visits');
-        $grid->column('star');
-        $grid->column('created_at');
-        $grid->column('updated_at');
-
-        // filter($callback)方法用来设置表格的简单搜索框
-        $grid->filter(function ($filter) {
-            // 设置created_at字段的范围查询
-            $filter->between('created_at', 'Created Time')->datetime();
+        $grid->column('id', __('Id'));
+        $grid->column('type', __('Type'))->display(function ($type){
+            return Category::find($type)->title;
         });
+        $grid->column('title', __('Title'));
+        $grid->column('visits', __('Visits'));
+        $grid->column('star', __('Star'));
+        $grid->column('created_at', __('Created at'));
+        $grid->column('updated_at', __('Updated at'));
+
+        $grid->filter(function ($filter) {
+            // 去掉默认的id过滤器
+            $filter->disableIdFilter();
+
+            $filter->like('title', 'title');
+        });
+
+        return $grid;
     }
 
-    public function index(Content $content)
+    /**
+     * Make a show builder.
+     *
+     * @param mixed $id
+     * @return Show
+     */
+    protected function detail($id)
     {
-        return $content
-            ->title('Dashboard')
-            ->description('Description...')
-            ->row(Dashboard::title())
-            ->row(function (Row $row) {
+        $show = new Show(Article::findOrFail($id));
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::environment());
-                });
+        $show->field('type', __('Type'));
+        $show->field('title', __('Title'));
+        $show->field('introduction', __('Introduction'));
+        $show->field('content', __('Content'));
+        $show->field('visits', __('Visits'));
+        $show->field('star', __('Star'));
+        $show->field('created_at', __('Created at'));
+        $show->field('updated_at', __('Updated at'));
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::extensions());
-                });
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::dependencies());
-                });
-            });
+        return $show;
     }
+
+    /**
+     * Make a form builder.
+     *
+     * @return Form
+     */
+    protected function form()
+    {
+        $form = new Form(new Article);
+
+        $form->select('type')->options('/admin/api/category');
+        $form->text('title', __('Title'));
+        $form->textarea('content', __('Content'));
+
+        return $form;
+    }
+
 }
