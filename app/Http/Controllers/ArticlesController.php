@@ -13,7 +13,9 @@ class ArticlesController extends Controller
      */
     public function show(Article $article)
     {
-        $active = $article->getActiveArticles();
+        $active = $article->getActive();
+        $article->increment('visits');
+
         return view('articles.show', compact('article', 'active'));
     }
 
@@ -27,8 +29,20 @@ class ArticlesController extends Controller
     public function search($keyword, Article $article)
     {
         $articles = $article->with('category')->where('title', 'like', "%$keyword%")->paginate(10);
-        $active = $article->getActiveArticles();
+        $active = $article->getActive();
 
         return view('articles/search', compact('articles', 'keyword', 'active'));
+    }
+
+    /**
+     * 点赞
+     * @param Article $article
+     * @return false|string
+     */
+    public function star(Article $article)
+    {
+        $article->increment('star');
+
+        return json_encode(array('status'=>1,'msg'=>'成功'));
     }
 }

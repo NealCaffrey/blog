@@ -18,7 +18,7 @@ class CategoriesController extends Controller
 
         // 读取文章分类
         $articles = $article->with('category')->where('type', $category->id)->orderBy('created_at', 'desc')->paginate(10);
-        $active = $article->getActiveArticles();
+        $active = $article->getActive();
 
         return view('categories.show', compact('articles', 'active'));
     }

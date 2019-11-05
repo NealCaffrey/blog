@@ -20,7 +20,6 @@ class CategorysTableSeeder extends Seeder
             ['title' => 'Algorithm'],
             ['title' => 'Review'],
             ['title' => 'Other'],
-            ['title' => 'AboutMe']
         ];
 
         DB::table('categories')->insert($data);

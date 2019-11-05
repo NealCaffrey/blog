@@ -28,12 +28,28 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 new Vue({
-    el: '#search',
+    el: '#app',
     methods: {
         search(e) {
           if (e.currentTarget.value != ''){
             window.location.href = '/search/' + e.currentTarget.value;
           }
+        },
+        star(e) {
+          var num = $('#star').html();
+          var id = $('#star').attr('data-content');
+
+          $.ajax({
+            url:'/article/' + id,
+            type:'patch',
+            data:{
+              '_token': $('meta[name="csrf-token"]').attr('content')
+            },
+            success:function () {
+              num = parseInt(num) + 1;
+              $('#star').html(num)
+            }
+          })
         }
     }
 });

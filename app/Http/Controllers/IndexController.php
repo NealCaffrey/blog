@@ -14,8 +14,8 @@ class IndexController extends Controller
      */
     public function home(Article $article)
     {
-        $articles = $article->with('category')->orderBy('created_at', 'desc')->paginate(10);
-        $active = $article->getActiveArticles();
+        $articles   = $article->with('category')->orderBy('created_at', 'desc')->paginate(10);
+        $active     = $article->getActive();
 
         return view('index/home', compact('articles', 'active'));
     }
@@ -26,7 +26,7 @@ class IndexController extends Controller
      */
     public function about(Article $article)
     {
-        $active = $article->getActiveArticles();
+        $active = $article->getActive();
 
         return view('index/about', compact('active'));
     }

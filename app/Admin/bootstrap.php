@@ -18,4 +18,8 @@
  *
  */
 
-Encore\Admin\Form::forget(['map', 'editor']);
+use App\Admin\Extensions\Simplemde;
+use Encore\Admin\Form;
+
+Form::extend('editor', Simplemde::class);
+

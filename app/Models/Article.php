@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Models\Traits\ActiveArticleHelper;
 use Illuminate\Database\Eloquent\Model;
-use function foo\func;
+use HyperDown\Parser;
 
 class Article extends Model
 {
@@ -15,7 +15,9 @@ class Article extends Model
         parent::boot();
 
         static::saving(function ($model){
-            $model->introduction = substr($model->content, 0, 200);
+            $parser = new Parser();
+            $model->content_html = $parser->makeHtml($model->content);
+            $model->introduction = mb_substr(strip_tags($model->content_html), 0, 100);
         });
     }
 

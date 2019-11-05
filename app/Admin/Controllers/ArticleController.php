@@ -81,7 +81,7 @@ class ArticleController extends AdminController
 
         $form->select('type')->options('/admin/api/category');
         $form->text('title', __('Title'));
-        $form->textarea('content', __('Content'));
+        $form->editor('content', __('Content'))->rules('required');
 
         return $form;
     }

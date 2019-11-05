@@ -17019,6 +17019,11 @@ body a:link {
   color: #000000;
 }
 
+#app {
+  width: 100%;
+  height: 100%;
+}
+
 /* header */
 
 a.nav-link {
@@ -17087,13 +17092,27 @@ nav.navbar.navbar-expand-lg {
   border-radius: 5px;
   background-color: white;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px 30px;
 }
 
 #show #article-show {
   font-size: 16px;
   line-height: 2.5;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+#show #article-show img {
+  width: 100%;
+}
+
+#show #article-show code {
+  width: calc(100% - 32px);
+  background-color: #1a2226;
+  margin-left: -30px;
+  margin-top: 10px;
+  padding-left: 32px;
+  position: absolute;
 }
 
 #show #article-footer {
@@ -17119,13 +17138,12 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
-  font-weight: bold;
   text-align: center;
   width: 100%;
   height: 100px;
   line-height: 100px;
   background-color: white;
-  font-size: 20px;
+  font-size: 14px;
   z-index: 100;
   margin-top: -100px;
 }
