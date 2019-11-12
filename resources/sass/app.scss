@@ -10,6 +10,13 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
+// 引入markdown样式文件
+@import "./../assets/css/Markdown.scss";
+
+@import "./../../public/packages/admin/simplemde/dist/simplemde.min.css";
+
+@import "./../assets/css/highlight.min.css";
+
 html {
   height: 100%;
   min-width: 500px;
@@ -58,6 +65,7 @@ nav.navbar.navbar-expand-lg {
   width: 200px;
   height:35px;
   padding: 1rem;
+  line-height: 5px;
 }
 
 #content {
@@ -110,17 +118,6 @@ nav.navbar.navbar-expand-lg {
     font-size: 16px;
     line-height: 2.5;
     margin-top:40px;
-    img {
-      width: 100%;
-    }
-    code {
-      width: calc(100% - 32px);
-      background-color: #1a2226;
-      margin-left: -30px;
-      margin-top:10px;
-      padding-left:32px;
-      position:absolute;
-    }
   }
 
   #article-footer {

@@ -23,5 +23,6 @@
     @include('layouts._footer')
   </div>
 <script src="{{ mix('js/app.js') }}"></script>
+<script src="/js/highlight.min.js"></script>
 </body>
 </html>

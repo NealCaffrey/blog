@@ -12,7 +12,7 @@
             <span class="ml-3">{{ $article->created_at }}</span>
         </h6>
         <hr>
-        <div id="article-show">
+        <div id="article-show" class="markdown">
             {!! $article->content_html !!}
         </div>
         <div id="article-footer">
