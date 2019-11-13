@@ -12,7 +12,7 @@
 
 html {
   height: 100%;
-  min-width: 500px;
+  width: 100%;
 }
 
 body {
@@ -164,5 +164,11 @@ footer {
   }
   .container {
     max-width: 100%;
+  }
+  .page-link {
+    padding: 0.5rem 0.5rem;
+  }
+  #show {
+    padding:20px 10px;
   }
 }
