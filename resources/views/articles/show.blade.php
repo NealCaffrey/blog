@@ -1,6 +1,10 @@
 @extends('layouts.default')
 @section('title', $article->title)
 
+@section('css')
+  <link rel="stylesheet" href="{{ URL::asset('css/highlight/monokai-sublime.css') }}">
+@stop
+
 @section('content')
     <div id="show">
         <h3 class="text-center">{{ $article->title }}</h3>
@@ -20,4 +24,9 @@
             <span id="star" data-content="{{ $article->id }}">{{ $article->star }}</span>
         </div>
     </div>
+@stop
+
+@section('js')
+  <script src="{{ URL::asset('js/highlight.pack.js') }}"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 @stop

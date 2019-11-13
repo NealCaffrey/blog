@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@yield('title', 'Blog') - NealCaffrey</title>
+    <meta charset="utf-8">
     <meta name="csrf-token" content="{{csrf_token()}}">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>@yield('title', 'Blog') | NealCaffrey</title>
+    <meta name="description" content="NealCaffrey's Personal Blog">
+    <meta name="keywords" content="NealCaffrey,PHP,MYSQL,Linux,Web,Algorithm,Review,Other,Elasticsearch,Laravel,ThinkPHP,Go,Python">
+    <meta name="author" content="NealCaffrey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @yield('css')
 </head>
 <body>
   <div id="app">
@@ -23,6 +31,7 @@
     @include('layouts._footer')
   </div>
 <script src="{{ mix('js/app.js') }}"></script>
-<script src="/js/highlight.min.js"></script>
+@yield('js')
+
 </body>
 </html>
