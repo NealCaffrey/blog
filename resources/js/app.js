@@ -50,6 +50,18 @@ new Vue({
               $('#star').html(num)
             }
           })
+        },
+        change(e) {
+          $('#navbar-list').toggle();
         }
+    },
+    mounted() {
+      var width = 0;
+      width = `${document.documentElement.clientWidth}`;
+      window.onresize = function temp() {
+        if (width >= 768) {
+          $('#navbar-list').hide();
+        }
+      };
     }
 });

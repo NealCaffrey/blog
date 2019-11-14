@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="/"><\/\/\></a>
-        <i class="fa fa-bars" aria-hidden="true" id="navIcon"></i>
+        <i class="fa fa-bars" aria-hidden="true" id="navIcon" @click="change($event)"></i>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
@@ -21,4 +21,18 @@
             </li>
         </ul>
     </div>
+    <div class="container" id="navbar-list">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <a href="#"><li class="nav-item">PHP</li></a>
+          <a href="#"><li class="nav-item">MySQL</li></a>
+          <a href="#"><li class="nav-item">Linux</li></a>
+          <a href="#"><li class="nav-item">Web</li></a>
+          <a href="#"><li class="nav-item">Algorithm</li></a>
+          <a href="#"><li class="nav-item">Review</li></a>
+          <a href="#"><li class="nav-item">Other</li></a>
+        </ul>
+      </div>
+    </div>
 </nav>
+

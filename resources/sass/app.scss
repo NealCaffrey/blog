@@ -154,6 +154,9 @@ footer {
   #navIcon {
     display: none;
   }
+  #navbar-list {
+    display: none;
+  }
 }
 @media (max-width:768px) {
   #searchBox {
@@ -170,5 +173,18 @@ footer {
   }
   #show {
     padding:20px 10px;
+  }
+  #create_at {
+    display: none;
+  }
+  #navbar-list{
+    display: none;
+    border-top:1px solid #e7e7e7;
+    padding-top:10px;
+    .nav-item {
+      line-height: 50px;
+      height: 50px;
+      font-size:14px;
+    }
   }
 }

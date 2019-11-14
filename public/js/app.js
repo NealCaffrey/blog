@@ -49249,7 +49249,20 @@ new Vue({
           $('#star').html(num);
         }
       });
+    },
+    change: function change(e) {
+      $('#navbar-list').toggle();
     }
+  },
+  mounted: function mounted() {
+    var width = 0;
+    width = "".concat(document.documentElement.clientWidth);
+
+    window.onresize = function temp() {
+      if (width >= 768) {
+        $('#navbar-list').hide();
+      }
+    };
   }
 });
 
