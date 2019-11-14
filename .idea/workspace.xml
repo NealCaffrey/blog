@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c8dec4b-e36a-43a0-a0a9-a0a602f92431" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/404.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,26 +133,26 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/packages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/errors" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\code\Blog\public\packages" />
-      <recent name="C:\Users\Administrator\code\Blog\public\js" />
-      <recent name="C:\Users\Administrator\code\Blog\resources\js" />
-      <recent name="C:\Users\Administrator\code\Blog\resources\assets" />
-      <recent name="C:\Users\Administrator\code\Blog\resources\assets\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\code\Blog\public\css" />
       <recent name="C:\Users\Administrator\code\Blog\resources\js" />
       <recent name="C:\Users\Administrator\code\Blog\resources\assets\css" />
       <recent name="C:\Users\Administrator\code\Blog\app\Models" />
       <recent name="C:\Users\14343\code\Blog\resources\views\categories" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\Blog\resources\views\errors" />
+      <recent name="C:\Users\Administrator\code\Blog\public\css" />
+      <recent name="C:\Users\Administrator\code\Blog\public\packages" />
+      <recent name="C:\Users\Administrator\code\Blog\public\js" />
+      <recent name="C:\Users\Administrator\code\Blog\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,7 +205,7 @@
       <workItem from="1573115622752" duration="1172000" />
       <workItem from="1573454704968" duration="5057000" />
       <workItem from="1573614217949" duration="14218000" />
-      <workItem from="1573694562123" duration="6767000" />
+      <workItem from="1573694562123" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1561977133095</created>
