@@ -24,13 +24,14 @@
     <div class="container" id="navbar-list">
       <div class="navbar-collapse">
         <ul class="navbar-nav">
-          <a href="#"><li class="nav-item">PHP</li></a>
-          <a href="#"><li class="nav-item">MySQL</li></a>
-          <a href="#"><li class="nav-item">Linux</li></a>
-          <a href="#"><li class="nav-item">Web</li></a>
-          <a href="#"><li class="nav-item">Algorithm</li></a>
-          <a href="#"><li class="nav-item">Review</li></a>
-          <a href="#"><li class="nav-item">Other</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'PHP') }}">PHP</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'MySQL') }}">MySQL</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'Linux') }}">Linux</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'Web') }}">Web</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'Algorithm') }}">Algorithm</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'Review') }}">Review</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('category.show', 'Other') }}">Other</li></a>
+          <a href="#"><li class="nav-item" href="{{ route('about') }}">About</li></a>
         </ul>
       </div>
     </div>
