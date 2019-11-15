@@ -24,9 +24,9 @@ class Simplemde extends Field
             var simplemde = new SimpleMDE({
                autofocus: true,
                 autosave: {
-                    enabled: true,
-                    delay: 5000,
-                    unique_id: "editor01",
+                    enabled: false,
+                    delay: 50,
+                    unique_id: "editor02",
                 },
                 spellChecker: false,
             });

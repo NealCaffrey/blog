@@ -44,6 +44,10 @@ class ArticleController extends AdminController
             $filter->like('title', 'title');
         });
 
+        $grid->actions(function ($actions){
+            $actions->disableView();
+        });
+
         return $grid;
     }
 
@@ -81,7 +85,7 @@ class ArticleController extends AdminController
 
         $form->select('type')->options('/admin/api/category');
         $form->text('title', __('Title'));
-        $form->editor('content', __('Content'))->rules('required');
+        $form->editor('content', __('Content'));
 
         return $form;
     }
