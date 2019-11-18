@@ -159,6 +159,9 @@ footer {
   }
 }
 @media (max-width:768px) {
+  nav.navbar.navbar-expand-lg {
+    margin-bottom: 20px;
+  }
   #searchBox {
     display: none;
   }
@@ -186,5 +189,10 @@ footer {
       height: 50px;
       font-size:14px;
     }
+  }
+  footer {
+    height:70px;
+    line-height:70px;
+    margin-top: -70px;
   }
 }

@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c8dec4b-e36a-43a0-a0a9-a0a602f92431" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Extensions/Simplemde.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Extensions/Simplemde.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ArticlesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ArticlesFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ArticlesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ArticlesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategorysTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategorysTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +209,9 @@
       <workItem from="1573694562123" duration="8194000" />
       <workItem from="1573708063832" duration="12000" />
       <workItem from="1573790175227" duration="3579000" />
-      <workItem from="1573807880717" duration="2464000" />
+      <workItem from="1573807880717" duration="3024000" />
+      <workItem from="1574060116660" duration="738000" />
+      <workItem from="1574060989732" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1561977133095</created>
