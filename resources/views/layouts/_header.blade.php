@@ -12,7 +12,6 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Algorithm') }}">Algorithm</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Review') }}">Review</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('category.show', 'Other') }}">Other</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
             </ul>
         </div>
         <ul class="navbar-nav justify-content-end" id="searchBox">
@@ -31,7 +30,6 @@
           <a href="{{ route('category.show', 'Algorithm') }}"><li class="nav-item">Algorithm</li></a>
           <a href="{{ route('category.show', 'Review') }}"><li class="nav-item">Review</li></a>
           <a href="{{ route('category.show', 'Other') }}"><li class="nav-item">Other</li></a>
-          <a href="{{ route('about') }}"><li class="nav-item">About</li></a>
         </ul>
       </div>
     </div>

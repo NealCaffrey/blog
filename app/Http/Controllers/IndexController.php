@@ -19,15 +19,4 @@ class IndexController extends Controller
 
         return view('index/home', compact('articles', 'active'));
     }
-
-    /**
-     * 关于页
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function about(Article $article)
-    {
-        $active = $article->getActive();
-
-        return view('index/about', compact('active'));
-    }
 }
