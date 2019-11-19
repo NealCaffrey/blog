@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c8dec4b-e36a-43a0-a0a9-a0a602f92431" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Handlers/ImageUploadHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Extensions/Simplemde.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Extensions/Simplemde.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -146,19 +146,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\code\Blog\public\css" />
-      <recent name="C:\Users\Administrator\code\Blog\resources\js" />
-      <recent name="C:\Users\Administrator\code\Blog\resources\assets\css" />
-      <recent name="C:\Users\Administrator\code\Blog\app\Models" />
-      <recent name="C:\Users\14343\code\Blog\resources\views\categories" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\code\Blog\resources\views\errors" />
       <recent name="C:\Users\Administrator\code\Blog\public\css" />
       <recent name="C:\Users\Administrator\code\Blog\public\packages" />
       <recent name="C:\Users\Administrator\code\Blog\public\js" />
       <recent name="C:\Users\Administrator\code\Blog\resources\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\code\Blog\public\packages" />
+      <recent name="C:\Users\Administrator\code\Blog\public\css" />
+      <recent name="C:\Users\Administrator\code\Blog\resources\js" />
+      <recent name="C:\Users\Administrator\code\Blog\resources\assets\css" />
+      <recent name="C:\Users\Administrator\code\Blog\app\Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,6 +218,7 @@
       <workItem from="1574060116660" duration="738000" />
       <workItem from="1574060989732" duration="3166000" />
       <workItem from="1574071550358" duration="1708000" />
+      <workItem from="1574149760952" duration="8134000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1561977133095</created>

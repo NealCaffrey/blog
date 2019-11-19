@@ -3,15 +3,17 @@
     <div class="avatar">
       <img src="/images/bg.jpg" width="100px">
     </div>
-    <div class="about-list">刘传其</div>
     <div class="about-list">
-      <i class="fa fa-briefcase" aria-hidden="true"></i>后端开发工程师
+      <p>刘传其</p>
     </div>
     <div class="about-list">
-      <i class="fa fa-map-marker" aria-hidden="true"></i>成都
+      <i class="fa fa-briefcase" aria-hidden="true" style="color: #a5a5a5"></i>后端开发工程师
     </div>
     <div class="about-list">
-      <i class="fa fa-envelope" aria-hidden="true"></i>1434376870@qq.com
+      <i class="fa fa-map-marker" aria-hidden="true" style="color: #a5a5a5"></i>成都
+    </div>
+    <div class="about-list">
+      <i class="fa fa-envelope" aria-hidden="true" style="color: #a5a5a5"></i>1434376870@qq.com
     </div>
   </div>
 </div>

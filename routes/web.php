@@ -19,3 +19,5 @@ Route::get('search/{keyword}', 'ArticlesController@search')->name('article.searc
 Route::get('tag/{tag}', 'ArticlesController@tag')->name('article.tag');
 Route::patch('/article/{article}', 'ArticlesController@star');
 
+Route::post('uploadImage', 'IndexController@uploadImage')->name('uploadImage');
+
