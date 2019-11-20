@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c8dec4b-e36a-43a0-a0a9-a0a602f92431" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,7 +212,7 @@
       <workItem from="1574071550358" duration="1708000" />
       <workItem from="1574149760952" duration="8283000" />
       <workItem from="1574159064663" duration="160000" />
-      <workItem from="1574232999939" duration="23000" />
+      <workItem from="1574232999939" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1561977133095</created>
